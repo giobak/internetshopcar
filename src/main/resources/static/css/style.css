@@ -1,0 +1,38 @@
+.custom-bg{
+background:#673ab7!important
+}
+
+
+.admin .card{
+    border:1px solid #673ab7;
+}
+
+.admin .card:hover{
+
+    background:#e2e2e2;
+}
+
+.card{
+    border:1px solid #673ab7;
+    }
+
+.card:hover{
+
+    background:#e2e2e2;
+    cursor: pointer;
+}
+
+.list-group{
+    background:#673ab7!important;
+    border color:#673ab7!important;
+}
+
+h1{
+color: red;
+}
+
+.product-card {
+            border: 1px solid #dee2e6;
+            border-radius: .25rem;
+            margin-bottom: 20px;
+        }

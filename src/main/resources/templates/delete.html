@@ -1,0 +1,25 @@
+<!-- Modal for saving a category -->
+<div class="modal fade" id="save-category-modal" tabindex="-1" role="dialog" aria-labelledby="saveCategoryModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header custom-bg text-white">
+        <h5 class="modal-title fs-5" id="saveCategoryModalLabel">Save Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#" th:action="@{/saveCategory}" th:object="${category}" method="post">
+          <div class="mb-3">
+            <input type="text" class="form-control" th:field="*{categoryTitle}" placeholder="Enter category title" required/>
+          </div>
+          <div class="mb-3">
+            <textarea style="height: 350px;" class="form-control" th:field="*{categoryDescription}" placeholder="Enter category description" required></textarea>
+          </div>
+          <div class="container text-center">
+            <button class="btn btn-outline-success">Save Category</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
